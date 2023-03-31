@@ -1,0 +1,6 @@
+-- SQLite
+
+CREATE TABLE positions (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  description VARCHAR(120) NOT NULL
+);
