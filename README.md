@@ -132,8 +132,8 @@ Tarefas
 
 - [x] Construa uma consulta capaz de exibir todas as locações realizadas, assim como também o nome do cliente, do automóvel e do funcionário vinculados em cada locação
 
-- [ ] Construa uma consulta capaz de exibir quantas locações existem na tabela de LOCATIONS
+- [x] Construa uma consulta capaz de exibir quantas locações existem na tabela de LOCATIONS
 
-- [ ] Construa uma consulta capaz de exibir qual foi a locação com o TOTAL com maior valor.
+- [x] Construa uma consulta capaz de exibir qual foi a locação com o TOTAL com maior valor.
 
-- [ ] Construa uma consulta capaz de exibir todas as locações realizadas, entre as datas “2022-05-20” a “2022-12-25”
+- [x] Construa uma consulta capaz de exibir todas as locações realizadas, entre as datas “2022-05-20” a “2022-12-25”
