@@ -108,23 +108,23 @@ Tarefas
 | 5   | 2022-11-20 | 2022-11-29 | 900   | 1           | 3      | 2           |
 | 6   | 2019-10-01 | 2019-10-29 | 2800  | 3           | 1      | 6           |
 
-- [ ] Construa uma query SQL para editar o campo e-mail do cliente com nome Carolina, onde devemos trocar de “carol@ig.com.br” para “carolina@campuscode.com.br”.
+- [x] Construa uma query SQL para editar o campo e-mail do cliente com nome Carolina, onde devemos trocar de “carol@ig.com.br” para “carolina@campuscode.com.br”.
 
-- [ ] Construa uma query SQL para editar a data de nascimento do cliente com nome Josefa para “1986-06-19”.
+- [x] Construa uma query SQL para editar a data de nascimento do cliente com nome Josefa para “1986-06-19”.
 
-- [ ] Construa uma query SQL para editar o ano do automóvel com nome Fiat Cronos de “2022” para “2019” da tabela de CARS
+- [x] Construa uma query SQL para editar o ano do automóvel com nome Fiat Cronos de “2022” para “2019” da tabela de CARS
 
-- [ ] Construa uma query SQL para excluir o automóvel com nome Hyundai HB20 1.6 da tabela de CARS
+- [x] Construa uma query SQL para excluir o automóvel com nome Hyundai HB20 1.6 da tabela de CARS
 
-- [ ] Construa uma query SQL para alterar o nome da coluna “PHONE” da tabela de EMPLOYEES, para “PHONE NUMBER”
+- [x] Construa uma query SQL para alterar o nome da coluna “PHONE” da tabela de EMPLOYEES, para “PHONE NUMBER”
 
-- [ ] Construa uma consulta capaz de exibir somente o name, lastname e email dos clientes que moram no estado de SP
+- [x] Construa uma consulta capaz de exibir somente o name, lastname e email dos clientes que moram no estado de SP
 
-- [ ] Construa uma consulta capaz de exibir somente os automóveis que estão com o status “Liberado”
+- [x] Construa uma consulta capaz de exibir somente os automóveis que estão com o status “Liberado”
 
-- [ ] Construa uma consulta capaz de exibir todos os automóveis do ano 2016.
+- [x] Construa uma consulta capaz de exibir todos os automóveis do ano 2016.
 
-- [ ] Construa uma consulta capaz de exibir todos os funcionários e seus respectivos cargos
+- [x] Construa uma consulta capaz de exibir todos os funcionários e seus respectivos cargos
 
 - [ ] Construa uma consulta capaz de exibir somente os funcionários que realizaram mais ou igual a 2 locações.
 
