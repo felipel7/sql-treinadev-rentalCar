@@ -5,12 +5,10 @@ UPDATE customers
   SET email = 'carolina@campuscode.com.br'
   WHERE id = 9;
 
-
 -- edit birth_date Josefa to “1986-06-19”
 UPDATE customers 
   SET birth_date = '1986-06-19'
   WHERE id = 4;
-
 
 -- edit year Fiat Cronos from “2022” to “2019”
 UPDATE cars
@@ -39,7 +37,6 @@ SELECT e.name AS 'Nome', p.description AS 'Cargo'
   FROM employees e
   JOIN positions p ON (e.position_id = p.id);
 
-
 -- only employees with >= 2 locations
 SELECT e.name AS 'funcionários' FROM locations l
 JOIN employees e ON l.employee_id = e.id
@@ -65,3 +62,14 @@ FROM locations l
 JOIN customers c ON l.customer_id = c.id
 JOIN cars ON l.car_id = cars.id
 JOIN employees e ON l.employee_id = e.id;
+
+-- show how many locations exists
+SELECT COUNT(*) AS 'Total' FROM locations;
+
+-- highest total value in locations
+SELECT MAX(total) AS 'Total' FROM locations;
+
+-- all locations between “2022-05-20” and“2022-12-25”
+SELECT * FROM locations 
+WHERE start_date >= '2022-05-20' 
+AND end_date <= '2022-12-25';  
