@@ -38,3 +38,30 @@ SELECT * FROM cars WHERE year = 2016;
 SELECT e.name AS 'Nome', p.description AS 'Cargo' 
   FROM employees e
   JOIN positions p ON (e.position_id = p.id);
+
+
+-- only employees with >= 2 locations
+SELECT e.name AS 'funcionários' FROM locations l
+JOIN employees e ON l.employee_id = e.id
+GROUP BY l.employee_id
+HAVING COUNT(*) >= 2;
+
+-- only customers with >= 2 locations
+SELECT c.name AS 'funcionários' FROM locations l
+JOIN customers c ON l.customer_id = c.id
+GROUP BY l.customer_id
+HAVING COUNT(*) >= 2;
+
+-- show all locations with name, car and employee names
+SELECT 
+  l.id,
+  l.start_date,
+  l.end_date,
+  l.total,
+  c.name AS 'Cliente',
+  cars.name AS 'Carro',
+  e.name AS 'Funcionário' 
+FROM locations l
+JOIN customers c ON l.customer_id = c.id
+JOIN cars ON l.car_id = cars.id
+JOIN employees e ON l.employee_id = e.id;
