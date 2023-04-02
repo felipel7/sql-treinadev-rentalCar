@@ -126,11 +126,11 @@ Tarefas
 
 - [x] Construa uma consulta capaz de exibir todos os funcionários e seus respectivos cargos
 
-- [ ] Construa uma consulta capaz de exibir somente os funcionários que realizaram mais ou igual a 2 locações.
+- [x] Construa uma consulta capaz de exibir somente os funcionários que realizaram mais ou igual a 2 locações.
 
-- [ ] Construa uma consulta capaz de exibir somente os clientes que realizaram mais ou igual a 2 locações.
+- [x] Construa uma consulta capaz de exibir somente os clientes que realizaram mais ou igual a 2 locações.
 
-- [ ] Construa uma consulta capaz de exibir todas as locações realizadas, assim como também o nome do cliente, do automóvel e do funcionário vinculados em cada locação
+- [x] Construa uma consulta capaz de exibir todas as locações realizadas, assim como também o nome do cliente, do automóvel e do funcionário vinculados em cada locação
 
 - [ ] Construa uma consulta capaz de exibir quantas locações existem na tabela de LOCATIONS
 
