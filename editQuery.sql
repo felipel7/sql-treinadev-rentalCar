@@ -39,15 +39,15 @@ SELECT e.name AS 'Nome', p.description AS 'Cargo'
 
 -- only employees with >= 2 locations
 SELECT e.name AS 'funcionários' FROM locations l
-JOIN employees e ON l.employee_id = e.id
-GROUP BY l.employee_id
-HAVING COUNT(*) >= 2;
+  JOIN employees e ON l.employee_id = e.id
+  GROUP BY l.employee_id
+  HAVING COUNT(*) >= 2;
 
 -- only customers with >= 2 locations
 SELECT c.name AS 'funcionários' FROM locations l
-JOIN customers c ON l.customer_id = c.id
-GROUP BY l.customer_id
-HAVING COUNT(*) >= 2;
+  JOIN customers c ON l.customer_id = c.id
+  GROUP BY l.customer_id
+  HAVING COUNT(*) >= 2;
 
 -- show all locations with name, car and employee names
 SELECT 
@@ -71,5 +71,5 @@ SELECT MAX(total) AS 'Total' FROM locations;
 
 -- all locations between “2022-05-20” and“2022-12-25”
 SELECT * FROM locations 
-WHERE start_date >= '2022-05-20' 
-AND end_date <= '2022-12-25';  
+  WHERE start_date >= '2022-05-20' 
+  AND end_date <= '2022-12-25';  
