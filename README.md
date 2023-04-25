@@ -1,8 +1,15 @@
+[Instruções para executar o projeto](#Utilização)
+
+## Intro
+
 O projeto visa construir um banco de dados real para uma empresa de locação de veículos. Durante a execução deste desafio, você terá a oportunidade de praticar e aperfeiçoar todas as habilidades que foram adquiridas durante o curso Manipulando dados com SQL - Uma abordagem rápida e prática.
 
 Como nosso foco é praticar a linguagem SQL, será disponibilizado o diagrama do banco de dados com todas as tabelas, atributos e chaves já definidas para que você foque somente na construção do projeto. Embora existam outras ferramentas e banco de dados, é recomendável que você utilize o banco de dados SQLite e o Visual Studio Code conforme foi apresentado durante as aulas.
 
-Resumo do Projeto
+<br />
+
+## Resumo do Projeto
+
 Nosso projeto será construir um banco de dados responsável por gerenciar dados de uma empresa do ramo de locação de veículos. O banco de dados deve ser capaz de armazenar dados tanto dos clientes, funcionários e cargos existentes, como também os modelos, as marcas, os automóveis e as informações das locações realizadas pelos clientes da empresa.
 
 Este desafio é composto por várias tarefas em uma ordem planejada e algumas tarefas possuem dependência com alguma tarefa anterior. Sendo assim, é necessário que você resolva cada tarefa seguindo a ordem sugerida. Ao final de cada tarefa esperamos que você inclua em seu repositório Git os arquivos SQL necessários para concluir a tarefa. Você pode criar quantos arquivos SQL quiser de acordo com sua organização, mas pedimos que mantenha sempre uma identificação da tarefa referente a cada arquivo. Recomendamos a criação de subpastas ou o uso de um identificador no nome de cada arquivo.
@@ -14,11 +21,13 @@ Ao final de todo o trabalho, este é o banco de dados que esperamos que você te
 Esquema do banco de dados da locadora de veículos
 Lembre-se sempre: em caso de dúvidas, recomendamos que você assista às aulas novamente.
 
-Importante: este desafio pretende te ajudar na consolidação de conhecimentos e, ao mesmo tempo, permitir que nossa equipe acompanhe sua evolução técnica. Por isso, é uma atividade individual e pedimos a gentileza de não compartilhar com outras pessoas participantes. No entanto, você ainda pode tirar dúvidas sobre o conteúdo do curso no canal da turma no Mattermost.
+**Importante**: este desafio pretende te ajudar na consolidação de conhecimentos e, ao mesmo tempo, permitir que nossa equipe acompanhe sua evolução técnica. Por isso, é uma atividade individual e pedimos a gentileza de não compartilhar com outras pessoas participantes. No entanto, você ainda pode tirar dúvidas sobre o conteúdo do curso no canal da turma no Mattermost.
 
 Bom desafio!
 
-Tarefas
+<br />
+
+## Tarefas
 
 - [x] Crie o banco de dados no SQlite com nome dbRentalcar
 
@@ -37,6 +46,9 @@ Tarefas
 | 9   | Carolina | Medeiros  | (11) 935 | carol@ig.com.br     | Rua dos Jatobás, 1    | Cajamar        | SP    | 1974-08-21 |
 | 10  | Marcos   | Rodrigues | (11) 972 | marcos@uol.com.br   | Rua das Amazonas, 89  | Recife         | PE    | 1966-05-25 |
 
+<br />
+<br />
+
 - [x] Construa uma query SQL para criar a tabela CAR_MODEL (modelos) no banco de dados, e logo em seguida insira os modelos abaixo:
 
 | ID  | MODEL_NAME  |
@@ -52,6 +64,9 @@ Tarefas
 | 9   | Utilitário  |
 | 10  | Buggy       |
 
+<br />
+<br />
+
 - [x] Construa uma query SQL para criar a tabela CAR_BRAND (marcas) no banco de dados, e logo em seguida insira as marcas abaixo:
 
 | ID  | BRAND_NAME |
@@ -65,6 +80,9 @@ Tarefas
 | 7   | Honda      |
 | 8   | Fiat       |
 
+<br />
+<br />
+
 - [x] Construa uma query SQL para criar a tabela POSITIONS (Cargos) no banco de dados, e logo em seguida insira os cargos abaixo:
 
 | ID  | DESCRIPTION               |
@@ -74,6 +92,9 @@ Tarefas
 | 3   | Vendedor                  |
 | 4   | Mecânico                  |
 | 5   | Assistente Administrativo |
+
+<br />
+<br />
 
 - [x] Construa uma query SQL para criar a tabela EMPLOYEES (Funcionários) no banco de dados, e logo em seguida insira os funcionários abaixo:
 
@@ -86,6 +107,9 @@ Tarefas
 | 5   | Matheus Alves  | (11) 92749-9602 | 04/03/2015    | 5           |
 | 6   | Aline Santos   | (11) 99789-3135 | 06/05/2022    | 3           |
 
+<br />
+<br />
+
 - [x] Construa uma query SQL para criar a tabela CARS (Carros) no banco de dados, e logo em seguida insira os automóveis abaixo:
 
 | ID  | NAME              | YEAR | COLOR  | KM    | STATUS        | BRAND_ID | MODEL_ID |
@@ -97,6 +121,9 @@ Tarefas
 | 5   | Honda HR-V        | 2018 | Prata  | 40000 | Em manutenção | 7        | 6        |
 | 6   | VW Amarok         | 2019 | Prata  | 25000 | Liberado      | 4        | 6        |
 
+<br />
+<br />
+
 - [x] Construa uma query SQL para criar a tabela LOCATIONS (Locações) no banco de dados, e logo em seguida insira as locações abaixo:
 
 | ID  | START_DATE | END_DATE   | TOTAL | CUSTOMER_ID | CAR_ID | EMPLOYEE_ID |
@@ -107,6 +134,8 @@ Tarefas
 | 4   | 2018-02-20 | 2018-03-05 | 1250  | 6           | 4      | 6           |
 | 5   | 2022-11-20 | 2022-11-29 | 900   | 1           | 3      | 2           |
 | 6   | 2019-10-01 | 2019-10-29 | 2800  | 3           | 1      | 6           |
+
+<br />
 
 - [x] Construa uma query SQL para editar o campo e-mail do cliente com nome Carolina, onde devemos trocar de “carol@ig.com.br” para “carolina@campuscode.com.br”.
 
@@ -137,3 +166,16 @@ Tarefas
 - [x] Construa uma consulta capaz de exibir qual foi a locação com o TOTAL com maior valor.
 
 - [x] Construa uma consulta capaz de exibir todas as locações realizadas, entre as datas “2022-05-20” a “2022-12-25”
+
+<br />
+<br />
+
+## Utilização
+
+- Arquivo `insertFakeData.sql` é responsável por inserir todos os dados em todas as tabelas.
+
+- Arquivo `editQuery.sql` é responsável por realizar todas as consultas.
+
+- Cada tabela foi criada em um arquivo separado, com o objetivo de organizar o código do projeto.
+
+<br />
