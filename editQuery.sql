@@ -64,7 +64,8 @@ FROM
 
 -- only employees with >= 2 locations
 SELECT
-  e.name AS 'funcionários'
+  e.id,
+  e.name AS 'Funcionários'
 FROM
   locations l
   JOIN employees e ON l.employee_id = e.id
@@ -75,7 +76,8 @@ HAVING
 
 -- only customers with >= 2 locations
 SELECT
-  c.name AS 'funcionários'
+  c.id,
+  c.name AS 'Funcionários'
 FROM
   locations l
   JOIN customers c ON l.customer_id = c.id
@@ -107,6 +109,7 @@ FROM
 
 -- highest total value in locations
 SELECT
+  locations.id,
   MAX(total) AS 'Total'
 FROM
   locations;
